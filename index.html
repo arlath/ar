@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Aryasatya Lathif | Portofolio TKJ</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#06b6d4',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 dark:bg-gray-900 dark:text-gray-100 transition-colors duration-300">
+
+    <!-- NAVBAR -->
+    <nav class="fixed top-0 w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-2 text-xl font-bold text-primary dark:text-blue-400">
+                    <i class="fas fa-network-wired"></i>
+                    <span>Aryasatya<span class="text-secondary">.net</span></span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-primary dark:hover:text-blue-400 transition">Beranda</a>
+                    <a href="#about" class="hover:text-primary dark:hover:text-blue-400 transition">Tentang</a>
+                    <a href="#skills" class="hover:text-primary dark:hover:text-blue-400 transition">Keahlian</a>
+                    <a href="#projects" class="hover:text-primary dark:hover:text-blue-400 transition">Proyek</a>
+                    <a href="#contact" class="hover:text-primary dark:hover:text-blue-400 transition">Kontak</a>
+                    
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="theme-toggle" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700 transition">
+                        <i id="theme-toggle-dark-icon" class="fas fa-moon hidden"></i>
+                        <i id="theme-toggle-light-icon" class="fas fa-sun hidden"></i>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="flex md:hidden items-center space-x-3">
+                    <button id="theme-toggle-mobile" class="p-2 rounded-lg bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">
+                        <i id="theme-toggle-dark-icon-mobile" class="fas fa-moon hidden"></i>
+                        <i id="theme-toggle-light-icon-mobile" class="fas fa-sun hidden"></i>
+                    </button>
+                    <button id="mobile-menu-btn" class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Nav -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 px-4 pt-2 pb-4 space-y-2">
+            <a href="#home" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Beranda</a>
+            <a href="#about" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Tentang</a>
+            <a href="#skills" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Keahlian</a>
+            <a href="#projects" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Proyek</a>
+            <a href="#contact" class="mobile-link block py-2 px-3 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800">Kontak</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="home" class="min-h-screen pt-24 pb-12 flex items-center justify-center relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Hero Text -->
+                <div class="flex-1 text-center lg:text-left space-y-6">
+                    <div class="inline-block px-4 py-1.5 bg-blue-100 dark:bg-blue-900/40 text-primary dark:text-blue-400 rounded-full text-sm font-semibold tracking-wide">
+                        Network & System Specialist 🌐
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight">
+                        Saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Muhammad Aryasatya Lathif</span>
+                    </h1>
+                    <h2 class="text-xl sm:text-2xl text-gray-600 dark:text-gray-300 font-medium">
+                        Teknik Komputer & Jaringan (TKJ) Specialist
+                    </h2>
+                    <p class="text-gray-500 dark:text-gray-400 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0">
+                        Berfokus pada perancangan infrastruktur jaringan, konfigurasi router/switch (MikroTik & Cisco), administrasi server Linux/Windows, serta manajemen keamanan sistem.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#contact" class="px-7 py-3 bg-primary hover:bg-blue-700 text-white font-medium rounded-lg shadow-lg hover:shadow-blue-500/30 transition text-center">
+                            Hubungi Saya
+                        </a>
+                        <a href="#projects" class="px-7 py-3 border border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-800 font-medium rounded-lg transition text-center">
+                            Lihat Portfolio TKJ
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Hero Graphic/Avatar -->
+                <div class="flex-1 flex justify-center">
+                    <div class="relative w-72 h-72 sm:w-80 sm:h-80 rounded-full bg-gradient-to-tr from-primary to-secondary p-2 shadow-2xl group">
+                        <div class="w-full h-full bg-white dark:bg-gray-800 rounded-full flex flex-col items-center justify-center text-center shadow-inner overflow-hidden relative">
+                            <!-- Foto Profil -->
+                            <img id="profile-img" src="aryasigma.jpeg" alt="Muhammad Aryasatya Lathif" class="w-full h-full object-cover rounded-full transition duration-300 group-hover:scale-105" onerror="this.onerror=null; this.src='https://placehold.co/400x400/2563eb/ffffff?text=Aryasatya';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TENTANG SAYA -->
+    <section id="about" class="py-20 bg-white dark:bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Tentang Saya</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="space-y-4 text-gray-600 dark:text-gray-300">
+                    <h3 class="text-2xl font-semibold text-gray-900 dark:text-white">
+                        Muhammad Aryasatya Lathif
+                    </h3>
+                    <p class="leading-relaxed">
+                        Saya adalah seorang teknisi dan spesialis di bidang Teknik Komputer & Jaringan (TKJ). Memiliki passion tinggi dalam membangun topologi jaringan skala kecil hingga menengah, konfigurasi perangkat jaringan, serta mengelola server cloud maupun local.
+                    </p>
+                    <p class="leading-relaxed">
+                        Terbiasa bekerja secara sistematis dalam penyelesaian kendala jaringan (*troubleshooting*), pengabelan (UTP & Fiber Optic), routing statis/dinamis, hingga implementasi firewall untuk proteksi data.
+                    </p>
+                    
+                    <!-- Personal Info Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-sm">
+                        <div><strong class="text-gray-900 dark:text-white">Nama:</strong> Muhammad Aryasatya Lathif</div>
+                        <div><strong class="text-gray-900 dark:text-white">Email:</strong> arlathhh125@gmail.com</div>
+                        <div><strong class="text-gray-900 dark:text-white">Fokus:</strong> Networking & Server Admin</div>
+                        <div><strong class="text-gray-900 dark:text-white">Status:</strong> Siap Kerja / Freelance</div>
+                    </div>
+                </div>
+
+                <!-- Highlight Cards -->
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
+                        <i class="fas fa-network-wired text-3xl text-primary mb-3"></i>
+                        <h4 class="font-semibold text-lg">MikroTik & Cisco</h4>
+                        <p class="text-xs text-gray-500 mt-1">Routing, VLAN, OSPF, Bandwidth Management</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
+                        <i class="fas fa-terminal text-3xl text-secondary mb-3"></i>
+                        <h4 class="font-semibold text-lg">Linux Server</h4>
+                        <p class="text-xs text-gray-500 mt-1">Debian, Ubuntu, DNS, Web Server, Samba</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
+                        <i class="fas fa-wifi text-3xl text-primary mb-3"></i>
+                        <h4 class="font-semibold text-lg">Wireless & FO</h4>
+                        <p class="text-xs text-gray-500 mt-1">Point to Point, Splicing Fiber Optic</p>
+                    </div>
+                    <div class="p-6 bg-gray-50 dark:bg-gray-800 rounded-xl border border-gray-100 dark:border-gray-700 text-center">
+                        <i class="fas fa-shield-halved text-3xl text-secondary mb-3"></i>
+                        <h4 class="font-semibold text-lg">Network Security</h4>
+                        <p class="text-xs text-gray-500 mt-1">Firewall, VPN, Port Forwarding, NAT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEAHLIAN (SKILLS) -->
+    <section id="skills" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Keahlian Teknikal</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Skill Group 1 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-router text-2xl text-primary"></i>
+                        <h3 class="font-semibold text-xl">Jaringan & Router</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex justify-between"><span>MikroTik RouterOS</span> <span class="font-bold text-primary">90%</span></li>
+                        <li class="flex justify-between"><span>Cisco Packet Tracer / IOS</span> <span class="font-bold text-primary">85%</span></li>
+                        <li class="flex justify-between"><span>VLAN & Subnetting (CIDR/VLSM)</span> <span class="font-bold text-primary">95%</span></li>
+                        <li class="flex justify-between"><span>Routing (Static, OSPF, BGP)</span> <span class="font-bold text-primary">80%</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Group 2 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-server text-2xl text-secondary"></i>
+                        <h3 class="font-semibold text-xl">Administrasi Server</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex justify-between"><span>Linux (Debian / Ubuntu Server)</span> <span class="font-bold text-secondary">88%</span></li>
+                        <li class="flex justify-between"><span>Services (DNS, DHCP, Web, FTP)</span> <span class="font-bold text-secondary">90%</span></li>
+                        <li class="flex justify-between"><span>Virtualisasi (Proxmox / VMware)</span> <span class="font-bold text-secondary">75%</span></li>
+                        <li class="flex justify-between"><span>Web Server (Apache / Nginx)</span> <span class="font-bold text-secondary">82%</span></li>
+                    </ul>
+                </div>
+
+                <!-- Skill Group 3 -->
+                <div class="p-6 bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-100 dark:border-gray-700">
+                    <div class="flex items-center space-x-3 mb-4">
+                        <i class="fas fa-tools text-2xl text-primary"></i>
+                        <h3 class="font-semibold text-xl">Hardware & Kabling</h3>
+                    </div>
+                    <ul class="space-y-3 text-sm text-gray-600 dark:text-gray-300">
+                        <li class="flex justify-between"><span>Pengabelan UTP (Straight / Cross)</span> <span class="font-bold text-primary">95%</span></li>
+                        <li class="flex justify-between"><span>Fiber Optic (Splicing & OTDR)</span> <span class="font-bold text-primary">80%</span></li>
+                        <li class="flex justify-between"><span>Perakitan & Maintenance PC</span> <span class="font-bold text-primary">90%</span></li>
+                        <li class="flex justify-between"><span>Troubleshooting Hardware</span> <span class="font-bold text-primary">88%</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROYEK PORTFOLIO -->
+    <section id="projects" class="py-20 bg-white dark:bg-gray-800/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold">Proyek TKJ</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-2 rounded"></div>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex justify-center gap-3 mb-12 flex-wrap">
+                <button class="project-filter-btn active px-5 py-2 rounded-full text-sm font-medium transition bg-primary text-white" data-filter="all">Semua Proyek</button>
+                <button class="project-filter-btn px-5 py-2 rounded-full text-sm font-medium transition bg-gray-200 dark:bg-gray-700 hover:bg-gray-300" data-filter="network">Jaringan</button>
+                <button class="project-filter-btn px-5 py-2 rounded-full text-sm font-medium transition bg-gray-200 dark:bg-gray-700 hover:bg-gray-300" data-filter="server">Server</button>
+            </div>
+
+            <!-- Project Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Item 1 -->
+                <div class="project-card rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm" data-category="network">
+                    <div class="h-48 bg-gradient-to-r from-blue-600 to-indigo-700 flex items-center justify-center text-white">
+                        <i class="fas fa-network-wired text-5xl"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-400 rounded-full">Network</span>
+                        <h3 class="text-xl font-bold">Desain Topology VLAN & Routing MikroTik</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Membangun arsitektur jaringan tersegmentasi dengan Mikrotik RB750Gr3 untuk memisahkan lalu lintas data antar-departemen.</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 2 -->
+                <div class="project-card rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm" data-category="server">
+                    <div class="h-48 bg-gradient-to-r from-cyan-600 to-teal-700 flex items-center justify-center text-white">
+                        <i class="fas fa-server text-5xl"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-cyan-100 dark:bg-cyan-900/50 text-secondary dark:text-cyan-400 rounded-full">Server</span>
+                        <h3 class="text-xl font-bold">Server Local Debian Linux</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Implementasi Server Debian 11 dengan konfigurasi DNS Server (Bind9), Web Server (Apache), dan File Server (Samba).</p>
+                    </div>
+                </div>
+
+                <!-- Project Item 3 -->
+                <div class="project-card rounded-xl overflow-hidden bg-gray-50 dark:bg-gray-800 border border-gray-100 dark:border-gray-700 shadow-sm" data-category="network">
+                    <div class="h-48 bg-gradient-to-r from-emerald-600 to-green-700 flex items-center justify-center text-white">
+                        <i class="fas fa-wifi text-5xl"></i>
+                    </div>
+                    <div class="p-6 space-y-3">
+                        <span class="text-xs font-semibold px-2.5 py-1 bg-blue-100 dark:bg-blue-900/50 text-primary dark:text-blue-400 rounded-full">Network</span>
+                        <h3 class="text-xl font-bold">Hotspot System & Management Bandwidth</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400">Pembuatan gateway login hotspot kustom serta penerapan Simple Queue & Queue Tree MikroTik untuk manajemen bandwidth.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold">Hubungi Saya</h2>
+                <div class="w-16 h-1 bg-primary mx-auto mt-2 rounded"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Contact Info -->
+                <div class="space-y-6">
+                    <div class="flex items-start space-x-4">
+                        <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/40 text-primary rounded-lg flex items-center justify-center text-xl shrink-0">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-semibold">Email</h4>
+                            <p class="text-gray-600 dark:text-gray-400">arlathhh125@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start space-x-4">
+<!-- ... existing code -->
